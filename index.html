@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<title>NYC Collisions Analysis</title>
+
+<style>
+    h3 {color:  #000080;}
+    img {
+    width: 100%;
+   }
+   
+   * {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #f1f1f1;
+  padding: 20px; */
+  font-family: Arial;
+}
+
+/* Center website
+.main {
+  max-width: 1000px;
+  margin: auto;
+} */
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  /* padding: 10px; */
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Footer */
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+
+</style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-grey w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><h4><b>NYC</b> Collisions</h4></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button"><h4>Analysis</h4></a>
+      <a href="#source" class="w3-bar-item w3-button"><h4>Data</h4></a>
+      <a href="#team" class="w3-bar-item w3-button"><h4>Team</h4></a>
+
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/pictures/nyctraffic.jpg" alt="nyc">
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+<!-- --------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------- -->
+ <!-- Description Section -->
+ <div class="w3-container w3-padding-16" id="about">
+    <h2 class="w3-border-bottom w3-border-grey w3-padding-16"><b>Conclusion</b></h2>
+    <ul>
+        <li>Safety of pedestrians and cyclists have been improving in 2013 - 2019.</li> 
+        <li>The trend of cyclist injuries has improved significantly.</li>
+        <li>When considering all accidents that have caused deaths, the top 3 contributing factors are: failure to yield right-of-way, driver distraction and traffic control disregard.</li>
+        <li>When comparing the contribution of general electronics and cell phones to injuries and deaths; surprisingly cell phones have caused a lot less deaths and injuries then other electronics.</li>
+        <li>Comparing alcohol, illegal drugs, and prescription medications in accidents involving the motorist; alcohol has caused most injuries 
+          over the years.  On the other hand, prescription medications have decreased significantly, and in 2017 and 2018 have caused only 5 injuries.</li>
+      </ul>
+  </div>
+<!-- --------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------- -->
+    <!-- Analysis Section -->
+  <div class="w3-container w3-padding-16" id="projects">
+  <h2 class="w3-border-bottom w3-border-grey w3-padding-16"><b>Analysis</b></h2>
+
+                  <!-- Trends Analysis -->
+                  <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                      <div class="w3-display-topleft w3-black w3-padding">Trends Analysis</div>
+                      <a href="#trends"> <img src="/pictures/bike.jpg" width="300" height="200"></a>
+                    </div>
+                  </div>
+
+
+                  <!-- Contributing Factors Analysis -->
+                  <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                      <div class="w3-display-topleft w3-black w3-padding">Contributing Factors Analysis</div>
+                      <a href="#factors"> <img src="/pictures/car.jpg" width="300" height="200"></a>
+                    </div>
+                  </div>
+
+                  <!-- Boroughs Analysis -->
+                  <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                      <div class="w3-display-topleft w3-black w3-padding">Boroughs Analysis</div>
+                      <a href="#boroughs"> <img src="/pictures/nyc.jpg" alt="nyc" width="300" height="200"></a>
+                    </div>
+                  </div>
+
+                  <!-- Machine Learning Analysis -->
+                  <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                      <div class="w3-display-topleft w3-black w3-padding">Machine Learning Analysis</div>
+                      <a href="#machinelearning"> <img src="/pictures/ai.jpg" width="300" height="200"></a>
+                    </div>
+                  </div>
+    </div>
+<!-- --------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------- -->
+
+  <!-- !-- Trends Findings -->
+<div class="w3-container w3-padding-16" id="trends">
+    <h3 class="w3-border-bottom w3-border-grey w3-padding-8"><b>Trends Analysis</b></h3>
+      <!-- Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="/pictures/safety_injuries.png" style="width:100%">
+      <!-- <h3>My Work</h3> -->
+      <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="/pictures/safety_rides.png" style="width:100%">
+      <!-- <h3>My Work</h3> -->
+      <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
+    </div>
+  </div>
+  </div>
+
+  <div class="row">
+  <div class="column">
+    <div class="content">
+    <img src="/pictures/safety_measures.png" style="width:100%">
+      <!-- <h3>My Work</h3> -->
+      <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="/pictures/safety_forecast.png" style="width:100%">
+      <!-- <h3>My Work</h3> -->
+      <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
+    </div>
+  </div>
+  </div>
+<!-- </div> -->
+<!-- END GRID -->
+<!-- --------------------------------------------------------------------------------- -->
+
+<!-- Factors Findings -->
+<div class="w3-container w3-padding-16" id="factors">
+  <h3 class="w3-border-bottom w3-border-grey w3-padding-8"><b>Contributing Factors Analysis</b></h3>
+     <!-- Gallery Grid -->
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="/pictures/cellphones_accidents_people.png" style="width:100%">
+            <!-- <h3>My Work</h3> -->
+            <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="/pictures/cellphones_accidents_motorist.png" style="width:100%">
+            <!-- <h3>My Work</h3> -->
+            <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
+          </div>
+        </div>
+        </div>
+        <!-- Add row ------- -->
+        <div class="row">
+        <div class="column">
+          <div class="content">
+          <img src="/pictures/drugs_deaths_motorist.png" style="width:100%">
+            <!-- <h3>My Work</h3>
+            <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>  -->
+        </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="/pictures/drugs_injuries_motorist.png" style="width:100%">
+            <!-- <h3>My Work</h3> -->
+            <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
+          </div>
+        </div>
+        </div>
+      </div>
+       <!-- Add row ------- -->
+       <div class="row">
+          <div class="column">
+            <div class="content">
+            <img src="/pictures/percentage_deaths_factors.png" style="width:100%">
+              <!-- <h3>My Work</h3>
+              <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>  -->
+          </div>
+          </div>
+        </div>
+</div>
+      <!-- END GRID -->
+<!-- --------------------------------------------------------------------------------- -->
+
+<!-- </div>  <div class="w3-row-padding">    -->
+   <!-- Boroughs Findings -->
+    <div class="w3-container w3-padding-16" id="boroughs">
+        <h3 class="w3-border-bottom w3-border-grey w3-padding-8"><b>Boroughs Analysis</b></h3>
+   <!-- Gallery Grid -->
+        <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="/pictures/boroghs_graphs.png" style="width:100%">
+            <!-- <h3>My Work</h3> -->
+            <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+          <img src="/pictures/boroghs_geo.png" style="width:100%">
+            <!-- <h3>My Work</h3> -->
+            <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
+          </div>
+        </div>
+        </div>
+    </div>
+<!-- END GRID -->
+
+
+   <!-- Machine Learning Findings -->
+  <div class="w3-container w3-padding-16" id="machinelearning">
+     <h3 class="w3-border-bottom w3-border-grey w3-padding-8"><b>Machine Learning Analysis</b></h3>
+     <!-- Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <h3>Linear Regression</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset  amet, tempor prodesset eos no. Temporibus necessitatieos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+</div> 
+</div>
+<!-- END GRID -->
+
+
+<!-- Data Source -->
+<div class="w3-container w3-padding-16" id="source">
+    <h3 class="w3-border-bottom w3-border-grey w3-padding-8"><b>Data Source</b></h3>
+    <p><a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95/data">NYC Open Data</a></p>
+    <p><b>NYPD Motor Vehicle Collisions</b></p>
+      <p>"This is a breakdown of every collision in NYC by location and injury... This data is manually 
+      run every month and reviewed by the TrafficStat Unit before being posted on the NYPD 
+      website. Each record represents a collision in NYC by city, borough, precinct and 
+      cross street."</p>
+      <p><a href="nypddatasample.htm">NYPD Raw Data Sample</a></p>
+  </div>
+</div>
+
+<!-- Team Members Section -->
+    <div class="w3-col l3 m6 w3-margin-bottom"> </div>
+      <div class="w3-container w3-padding-48" id="team">
+          <h3 class="w3-border-bottom w3-border-grey w3-padding-8"><b>Team Members</b></h3>
+          <p class="w3-opacity">Adriana Kopf</p>
+          <p class="w3-opacity">Olga Roginkin</p>
+          <p class="w3-opacity">Shivang Patel</p>
+          <p class="w3-opacity">Usuma Ali</p>
+    </div>
+
+</div>
+<!-- Footer -->
+<footer class="footer w3-padding-8">
+  <p>NYC Collisions Analysis</p>
+</footer>
+
+</body>
+</html>
+
+
+<!-- 
+<div class="footer">
+    <p>Footer</p>
+  </div> -->
+  
+
